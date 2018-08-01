@@ -1,0 +1,29 @@
+﻿Eventos: as interações que o usuário possui com a interface web são chamadas de Eventos.
+	Para integrar um componente a um evento, o .addEventListener deve ser declarado para o elemento.
+	Ex.:
+		var botao = document.querySelector("#adicionar-paciente");
+		botao.addEventListener("click", mostraMensagem);
+
+		function mostraMensagem() {
+			console.log('Olá');
+		}
+	O modelo acima retrata uma função explícita para o método addEventListener.
+	Também é possível realizar a mesma ação com uma função implícita:
+	Ex. 2:
+		var botao = document.querySelector("#adicionar-paciente");
+		botao.addEventListener("click", function (){
+			console.log('Olá');
+		});
+	
+	O próximo problema a ser enfrentado é lidar com a ação padrão que cada evento possui.
+	Para isso, o método .preventDefault() que é do elemento event deve ser acionado.
+	O elemento event deve ser trazido como argumento da função.
+	Ex. 3:
+		var botao = document.querySelector("#adicionar-paciente");
+		botao.addEventListener("click", function (event){
+			event.preventDefault();
+			console.log('Olá');
+		});
+
+	O comportamento padrão de um form, quando clicamos em um button ou em 
+	um input submit, que está dentro dele, é enviar os dados e recarregar a página. 
