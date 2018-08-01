@@ -1,0 +1,14 @@
+﻿Selector All: Usar o .querySelectorAll em um elemento que contém outros elementos, resulta em um array com todos estes elementos dentro dele.
+'--> Dá pra usar um for pra iterar por entre os elementos desse array.
+
+* para exibição de números com casas decimais, a função toFixed(n) é usada, com n sendo o número de casas.
+
+É possível manipular o estilo dos elementos.
+	alguma_coisa.style.color = 'red'; ---> Muda a cor desse elemento para vermelho
+	alguma_coisa.style.backgroundColor = 'red'; ---> Muda a cor do fundo desse elemento para vermelho
+
+Como a manipulação visual de elementos em JS é desencorajada, é possível adicionar classes CSS para os elementos:
+'--> O atributo .classList retorna uma lista de classes que determinado elemento possui.
+'--> classList.add adiciona uma classe ao elemento usado.
+
+

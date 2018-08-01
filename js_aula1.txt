@@ -1,0 +1,24 @@
+﻿Mensagens:
+	Para mensagens nas pop-ups do navegador, a função alert() é a usada.
+	Para mensagens no console, consolo.log() é utilizado.
+
+Todas as funções acabam com ponto e vírgula.
+
+	### Para que o navegador entenda que o código escrito está em JS, o código deve ser escrito dentro da tag <script></script>
+
+Os erros de JavaScript são mostrados no console do navegador.
+No caso de erro de sintaxe, o erro Unexpected Identifier será lançado.
+
+Variáveis:
+	var nome_da_variável;
+
+	Ex.: var titulo = <h1> Hello </h1>
+	     titulo.textContent --> Hello
+
+Para não ficar muito refém do código html, a função querySelector suporta, além de tags, as classes, os indicadores css.
+'--> No exemplo da aula, é usado um indicador de classe:
+	<h1 class="titulo"> Hello </h1>
+	<script>
+		var titulo = document.querySelector(".titulo");
+							'--> O ponto é o seletor de classe
+								'--> O # é o seletor para id
